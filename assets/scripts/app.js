@@ -1,9 +1,15 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-currentResult = ((currentResult + 10) * 3) / 2 - 1;
+function add(num1, num2) {
+  const result = num1 + num2;
+  return result;
+}
+
+const additionalResult = add(1, 2);
+
+currentResult = additionalResult;
 
 let calculationDescription = `(${defaultResult} + 10) * 3 / 2 - 1`;
-let errorMessage = "An error occured!";
 
 outputResult(currentResult, calculationDescription);
